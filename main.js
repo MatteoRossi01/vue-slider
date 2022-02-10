@@ -1,4 +1,49 @@
-const items = [
+const app = new Vue (
+    {
+        el: '#root',
+        data: {
+
+            items : [
+                {
+                    name:'Svezia',
+                    url:'img/01.jpg',
+                    text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam, cumque provident totam omnis, magnam dolores dolorum corporis.'
+                },
+                {
+                    name:'Svizzera',
+                    url:'img/02.jpg',
+                    text:'Lorem ipsum'
+                },
+                {
+                    name:'Gran Bretagna',
+                    url:'img/03.jpg',
+                    text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'
+                },
+                {
+                    name:'Germania',
+                    url:'img/04.jpg',
+                    text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,'
+                },
+                {
+                    name:'Paradise',
+                    url:'img/05.jpg',
+                    text: 'Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,'
+                }
+            ],
+            active: 0,
+        },
+
+        methods: {
+
+            
+        }
+
+    }
+);
+
+
+
+/* const items = [
     {
         photo: 'img/01.jpg',
         title: "Svezia",
@@ -33,7 +78,7 @@ let thumb = '';
 let active = 1;
 
 
-/* Versione ciclo for con gli oggetti */
+/* Versione ciclo for con gli oggetti 
 for (let i=0; i<items.length; i++){
 
     item += `
@@ -93,5 +138,5 @@ next.addEventListener('click', function() {
         document.querySelector('.thumb.active').classList.remove('active');
         document.getElementsByClassName('thumb')[active].classList.add('active');
     }
-});
+}); */
 
